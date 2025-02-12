@@ -93,7 +93,7 @@ class Predictor(BasePredictor):
            out_path = out_path_tmp.format(i)
            torchaudio.save(out_path, j['tts_speech'], self.cosyvoice.sample_rate)
            print(out_path,'\n',j['tts_speech'],'\n----------------------------\n')
-           tts_audio = (i['tts_speech'].numpy() * (2 ** 15)).astype(np.int16).tobytes()
+           tts_audio = (j['tts_speech'].numpy() * (2 ** 15)).astype(np.int16).tobytes()
             
            yield Path(out_path)
 
