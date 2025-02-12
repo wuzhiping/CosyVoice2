@@ -4,6 +4,8 @@
 ```code
 docker run --rm -it -v $PWD/predict.py:/src/predict.py -p 5000:5000 --gpus=all shawoo/cosyvoice2-0.5b
 
+/root/.cache/modelscope/hub/iic
+
 curl -s -X POST \
   -H "Content-Type: application/json" \
   -d $'{
