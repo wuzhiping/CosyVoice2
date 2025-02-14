@@ -1,6 +1,7 @@
 # CosyVoice2
 [https://github.com/FunAudioLLM/CosyVoice](https://replicate.com/chenxwh/cosyvoice2-0.5b?input=docker&output=json)
 
+[fish speech](https://speech.fish.audio/zh/?h=docker#docker)
 ```code
 docker run --rm -it -v $PWD/predict.py:/src/predict.py -p 5000:5000 --gpus=all shawoo/cosyvoice2-0.5b
 
